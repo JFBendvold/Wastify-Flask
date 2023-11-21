@@ -13,7 +13,7 @@ Wastify-Flask is a Flask-based web application designed to process images using 
 1. **Clone the Repository**: `git clone https://github.com/JFBendvold/Wastify-Flask`
 2. **Install Dependencies**: Install necessary Python libraries including Flask, PIL, torch, torchvision, and others as needed.
 3. **Model Setup**: Ensure the YOLO model file (`yolo.pt`) and MobileNet state dictionary (`mnet.pth`) are placed in the `models` directory.
-4. **Run the Application**: Start the Flask server with `python main.py`.
+4. **Run the Application**: Start the Flask server with `flask --app main run --host=0.0.0.0`.
 
 ## API Endpoints
 - `POST /process_image`: Accepts an image file and returns the processed results including object classifications and probabilities.
